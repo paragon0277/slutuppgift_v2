@@ -1,6 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
+<!doctype html>
+<html lang="sv">
+<head lang="sv">
+   <title>Slutuppgift Webbutveckling</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" type="text/css" href="css/preview.css">
 <style>
@@ -57,14 +58,20 @@ nav{
             font-family: Sans-Serif;
             color: black;
         }
+  
         
         body {
-            background-color: cyan;
+           background-color: orange;
+           background-position: top;
+           background-repeat: no-repeat;
+           background-size: cover;
+           height: 100%;
         }
         
         .bodyalign {
             display: flex;
             flex-direction: row;
+           width: 100%;
         }
         
         .imgsize {
@@ -79,7 +86,7 @@ nav{
         .block {
             border: solid white;
             background-color: lightblue;
-            width: 850px;
+            width: 90%;
             display: flex;
             align-items: center;
         }
@@ -98,19 +105,42 @@ nav{
         
         .infopanel {
             padding-bottom: 60px;
-           padding-left: 10px;
+           width:50px;
+           padding-left: -20px;
            font-size: 30px;
         }
         
         .previewblock {
             margin-top: 25px;
-            border: solid lightgrey;
+            border: solid lightgrey 10px;
             height: 400px;
             overflow-y: scroll;
             overflow-x: hidden;
             display: flex;
             flex-direction: column;
+            width: 100%;
+        
         }
+        
+   .titlep {
+      font-size: 30px;
+      background-color: yellow;
+      color: darkblue;
+      font-family: helvetica ,sans-serif;
+      text-decoration: underline;
+      padding-top: 10px;
+      padding-bottom: 10px;
+   }
+   
+   .flexcolumn {
+   display: flex;
+      flex-direction: column;
+   }
+   
+   hoteltitle {
+   font-size: 30px;
+   background-color: white;
+   }
    
   #startimage {
   position:fixed;
@@ -119,7 +149,15 @@ nav{
   left:10px;
   top:100px;
 }
-        
+   
+   .scrollbar {
+height:400px;
+width=200%;
+border:solid 2px gray;
+      overflow:scroll;
+      overflow-x:hidden;
+      overflow-y:scroll;
+   }
 
         /* Dropdown Button */
 .dropbtn {
