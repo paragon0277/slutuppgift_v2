@@ -7,7 +7,9 @@ CSS kod: Ja
 
 Javascript kod (För C eller A-nivå): C-nivå
 
-- Lagt till fler js-filer samt optimerat de.
+Otydligt vad som ger A, antog att det behövdes mer filer.
+
+Lagt till fler js-filer samt optimerat de med JSCompress.
 
 
 Navbar: Ja
