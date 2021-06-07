@@ -1,5 +1,7 @@
-<!DOCTYPE html lang="se">
-<head>
+<!doctype html>
+<html lang="sv">
+<head lang="sv">
+   <title>Slutuppgift Webbutveckling</title>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" type="text/css" href="css/preview.css">
 <style>
@@ -51,16 +53,15 @@ nav{
 }
    
         p {
+            width: 200px;
             font-size: 20px;
             font-family: Sans-Serif;
             color: black;
-           height:600px;
-           background-color: lightblue;
         }
   
         
         body {
-           background-image: url("images/plane.jpg");
+           background-color: orange;
            background-position: top;
            background-repeat: no-repeat;
            background-size: cover;
@@ -70,6 +71,7 @@ nav{
         .bodyalign {
             display: flex;
             flex-direction: row;
+           width: 100%;
         }
         
         .imgsize {
@@ -84,7 +86,7 @@ nav{
         .block {
             border: solid white;
             background-color: lightblue;
-            width: 750px;
+            width: 90%;
             display: flex;
             align-items: center;
         }
@@ -103,7 +105,8 @@ nav{
         
         .infopanel {
             padding-bottom: 60px;
-           padding-left: 10px;
+           width:50px;
+           padding-left: -20px;
            font-size: 30px;
         }
         
@@ -115,11 +118,13 @@ nav{
             overflow-x: hidden;
             display: flex;
             flex-direction: column;
+            width: 100%;
+        
         }
         
    .titlep {
       font-size: 30px;
-      background-color: lightblue;
+      background-color: yellow;
       color: darkblue;
       font-family: helvetica ,sans-serif;
       text-decoration: underline;
@@ -127,10 +132,14 @@ nav{
       padding-bottom: 10px;
    }
    
-   .text {
-      background-color: white;
-      width: 50%;
-      height: 100%;
+   .flexcolumn {
+   display: flex;
+      flex-direction: column;
+   }
+   
+   hoteltitle {
+   font-size: 30px;
+   background-color: white;
    }
    
   #startimage {
@@ -141,10 +150,13 @@ nav{
   top:100px;
 }
    
-   .aboutblock {
-   display: flex;
-   flex-direction: row;
-      align-items: flex-start;
+   .scrollbar {
+height:400px;
+width=200%;
+border:solid 2px gray;
+      overflow:scroll;
+      overflow-x:hidden;
+      overflow-y:scroll;
    }
         
 </style>
