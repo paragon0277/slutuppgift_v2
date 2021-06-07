@@ -223,25 +223,22 @@ nav{
   <button onclick="myFunction()" class="dropbtn">Sök här</button>
   <div id="myDropdown" class="dropdown-content">
     <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-    <a href="italien/hotel1.html">Hotel Smeraldo</a>
-    <a href="egypten/hotel1.html">Aqua Vista</a>
-    <a href="spanien/hotel.html">Acro Iris</a>
-    <a href="kroatien/hotel1.html">Valamar Meteor</a>
-    <a href="grekland/hotel1.html">Cactus Hotel</a>
-     <a href="italien/hotel2.html">Hotel Adriano</a>
-    <a href="egypten/hotel2.html">Arabella Resort</a>
-    <a href="spanien/hotel2.html">Sol Barbacan</a>
-    <a href="kroatien/hotel2.html">Noemia Resort</a>
-    <a href="grekland/hotel2.html">Aquarium Hotel</a>
+    <a href="ital1.html">Hotel Smeraldo</a>
+    <a href="egyp1.html">Aqua Vista</a>
+    <a href="span1.html">Acro Iris</a>
+    <a href="kroa1.html">Valamar Meteor</a>
+    <a href="grek1.html">Cactus Hotel</a>
+     <a href="ital2.html">Hotel Adriano</a>
+    <a href="egyp2.html">Arabella Resort</a>
+    <a href="span2.html">Sol Barbacan</a>
+    <a href="kroa2.html">Noemia Resort</a>
+    <a href="grek2.html">Aquarium Hotel</a>
   </div>
 </div>
-<div class="scrollbar">
-<div style="display: flex; flex-direction:row;">
-<div style="height=400px; overflow-y=scroll;">
 <div style="border: solid; width: 100%; display: flex; flex-direction: row;">
     
 <div style="display: flex; flex-direction: column;">
-        <h1 style="color: black; background-color: white; font-size: 20px;">Cactus Hotel</h1>
+        <a class="hoteltitle" href="grek1.html">Cactus Hotel</a>
         <table style="width:30%; background-color: lightgrey;">
 <tbody style= "width: 10%">
 <tr>
@@ -270,21 +267,16 @@ nav{
     
     <img style="padding-left=20%" src="images\grek1.jpg">
 </div>
-</div>
-</div>
-</div>
-<div style="display: flex; flex-direction:row;">
-<div style="height=400px; overflow-y=scroll;">
 <div style="border: solid; width: 100%; display: flex; flex-direction: row;">
     
 <div style="display: flex; flex-direction: column;">
-        <h1 style="color: black; background-color: white; font-size: 20px;">Aquarium hotel</h1>
-        <table style="width:30%;">
+        <a class="hoteltitle" href="grek2.html">Aquarium Hotel</a>
+        <table style="width:30%; background-color: lightgrey;">
 <tbody style= "width: 10%">
 <tr>
 <td>&nbsp;Rum</td>
 <td>:</td>
-<td>1&nbsp;2</td>
+<td>1&nbsp;3</td>
 </tr>
 <tr>
 <td>&nbsp;Pool</td>
@@ -305,23 +297,19 @@ nav{
 </table>
 
     
-    <img style="padding-left=20%" src="images\grek4.jpg">
+    <img style="padding-left=20%" src="images\grek2.jpg">
 </div>
-</div>
-</div>
-</div>
-<div style="display: flex; flex-direction:row;">
-<div style="height=400px; overflow-y=scroll;">
+   
 <div style="border: solid; width: 100%; display: flex; flex-direction: row;">
     
 <div style="display: flex; flex-direction: column;">
-        <h1 style="color: black; background-color: white; font-size: 20px;">Albatros Beach Resort</h1>
-        <table style="width:30%;">
+        <a class="hoteltitle" href="span1.html">Acro Iris</a>
+        <table style="width:30%; background-color: lightgrey;">
 <tbody style= "width: 10%">
 <tr>
 <td>&nbsp;Rum</td>
 <td>:</td>
-<td>1&nbsp;2</td>
+<td>1&nbsp;3</td>
 </tr>
 <tr>
 <td>&nbsp;Pool</td>
@@ -342,34 +330,10 @@ nav{
 </table>
 
     
-    <img style="padding-left=20%" src="images\egyp1.jpg">
+    <img style="padding-left=20%" src="images\span1.jpg">
 </div>
-</div>
-</div>
-</div>
-</div>
-
-<script>
-    function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-function filterFunction() {
-  var input, filter, ul, li, a, i;
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
-  div = document.getElementById("myDropdown");
-  a = div.getElementsByTagName("a");
-  for (i = 0; i < a.length; i++) {
-    txtValue = a[i].textContent || a[i].innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      a[i].style.display = "";
-    } else {
-      a[i].style.display = "none";
-    }
-  }
-}
-</script>
+   
+<script src="js/searchbar.js"></script>
 <script src="js/hotelslider.js"></script>
 </body>
 </html>
