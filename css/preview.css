@@ -53,3 +53,9 @@
 .imageblock img {
   width: 250px;
 }
+
+hoteltitle {
+color: black; 
+background-color: white; 
+font-size: 20px;
+}
