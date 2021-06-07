@@ -46,5 +46,12 @@ CSS har optimerats med minifycode
 
 Tillgänglighet (Lighthouse, WACG): Lighthouse %
 
-Tillgänglighet har testats med lighthouse. (Lighthouse )
+Tillgänglighet har testats med lighthouse. 
+
+Performance: 100%
+Accessibility: 96% (orange har mest kontrast med blå)
+Best practices: 93% (p.g.a. optimering av bilder)
+SEO: 100%
+
+
 WACG vägledningarna har använts.
